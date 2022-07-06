@@ -1,0 +1,13 @@
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 5px solid powderblue;
+    padding: 30px; /*membuat ruang didalam kotak/border */
+    margin: 50px; /*membuat ruang atau jarak diluar kotak/border */
+  }
