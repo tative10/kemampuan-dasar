@@ -76,7 +76,7 @@ console.log(c)
 else{
   console.log("Buuat apa")
 }
-return z;
+
 }
 
 
