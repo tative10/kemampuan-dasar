@@ -130,4 +130,4 @@ function Triagle(s1,s2,s3)
     }
 
 }
-Triagle(2,2,2)
+Triagle(2,1,2)
