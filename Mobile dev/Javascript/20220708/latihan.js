@@ -14,3 +14,6 @@ console.log(java(10));
 }
 
 
+//ini percabangan
+let a = 10;
+
