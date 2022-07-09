@@ -131,3 +131,150 @@ function Triagle(s1,s2,s3)
 
 }
 Triagle(2,1,2)
+
+//number 6
+// function checkeInrange(x){
+function checkeInrange(x,start,end){
+    // if (x>=5 && x<=10){
+        if (x >= start && x <= end){
+        console.log(`${x} in Range ${start} and ${end}`);
+    }
+    else{
+        console.log(`${x} not in Range ${start} and ${end}`);
+    }
+
+}
+checkeInrange(15,5,20)
+
+//number 7
+// function evalNumbers(x1,x2){
+//     if (x1+x2 == true){
+//         console.log(`${x1+x2} adalah penjumlahan`);
+//     }
+//     else {
+//         console.log("Invalid operation");
+//     }
+
+// }
+// evalNumbers(1,4)
+
+function evalNumber(x1,x2,op){
+    if (op== "add"){
+        console.log (`${x1+x2} adalah penjumlahan dari ${x1} dan ${x2}`);
+    }
+    else if (op== "subtract"){
+        console.log (`${x1-x2} adalah pengurangan dari ${x1} dan ${x2}`);
+    }
+    else if (op== "multiply"){
+        console.log (`${x1*x2} adalah perkalian dari ${x1} dan ${x2}`);
+    }
+
+    else if (op== "devine"){
+        console.log (`${x1/x2} adalah pembagian dari ${x1} dan ${x2}`);
+    }
+    else if (op== "modulo"){
+        console.log (`${x1%x2} adalah modulo dari ${x1} dan ${x2}`);
+    }
+    else {
+        console.log("Tidak ada operasi yang dituju, coba lagi")
+    }
+
+}
+evalNumber(10,2,"devine")
+
+function checkLeapyear (year)
+{
+    // if (year % 4 == 0 && year % 100 != 0){
+    //     console.log(`${year} is leap year`)
+    // }
+    // else if (year % 4 == 0 || year % 400 == 0)
+    // {
+    //     console.log (`${year} is leap year`)
+    // }
+    if (((year % 4 == 0)&& (year % 100 != 0))||(year % 400 == 0)){
+        console.log(`${year} is leap year`)
+    }
+    else {
+        console.log(`${year} is not a leap year`)
+    }
+}
+checkLeapyear(2019)
+
+//number 9
+function grade(nilai)
+{
+    if (nilai <= 100 && nilai > 90){
+        console.log(`${nilai} S`)
+    }
+    else if ( nilai <=90 && nilai > 80){
+        console.log(`${nilai} A`)
+    }
+    else if (nilai <= 80 && nilai > 70){
+        console.log(`${nilai} B`)
+    }
+    else if (nilai <=70 && nilai > 60){
+        console.log(`${nilai} C`)
+    }
+    else if (nilai <=60 && nilai > 50)
+    {
+        console.log(`${nilai} D`)
+    }
+    else if (nilai <=50 && nilai > 40)
+    {
+        console.log(`${nilai} E`)
+    }
+    else{
+        console.log("mengulang yaa")
+    }
+}
+grade (90)
+
+//number 10
+// function month(range,bulan,year){
+//     if (range >=1 && range <= 12){
+//         if (bulan == 2){
+//             if (((year % 4 ==0 && year % 100 != 0))|| ( year % 400 == 0)) {
+//                 console.log ("Februari kabisat 29 days");
+//             }
+//             else {
+//                 console.log ("Februari bukan kabisat 28 days");
+//             }
+//         }
+//         else if (bulan == 4 || bulan == 6 || bulan == 9 || bulan == 11){
+//             console.log ("30 days");
+//         }
+//         else {
+//             console.log("31 days");
+//         }
+//     }
+//     else {
+//         console.log ("Invalid Month");
+//     }
+// }
+// month(19,1,2021)
+
+function bulan(year){
+    return (((year % 4 == 0) && (year % 100 != 0 ))||(year % 400 ==0));
+}
+
+function findDays (wulan,year){
+    if (wulan < 1 || wulan > 12){
+        console.log(`Invalid Month ${wulan}`)
+        return;
+    }
+    if (wulan == 2){
+        if (bulan(year)){
+            console.log ("29 days")
+        }
+        else {
+            console.log("28 days")
+        }
+    }
+    else if (wulan == 4 || wulan == 6 | wulan == 9 || wulan == 11){
+        console.log("30 days")
+    }
+    else{
+        console.lgo ("31 days")
+    }
+}
+findDays(13,2020)
