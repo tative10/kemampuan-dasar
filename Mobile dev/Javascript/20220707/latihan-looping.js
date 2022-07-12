@@ -65,4 +65,4 @@ for(var i=0;i<pow;i++){
 }
 console.log(numPower(10,2))
 
-//number 7
+
