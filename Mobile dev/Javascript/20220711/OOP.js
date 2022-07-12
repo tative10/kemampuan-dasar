@@ -24,7 +24,7 @@ eko.lastName = "sulisno";
 eko.sayHello ("joko");
 
 const budi = new Person();
-//const budi = nem Person ("Hilda", "Forger"); //parameter contruction function
+//const budi = new Person ("Hilda", "Forger"); //parameter contruction function
 
 budi.firstName = "Budi";
 budi.lastName = "Jaya";
