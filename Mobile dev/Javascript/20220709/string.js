@@ -19,5 +19,3 @@ hello[0];
  var b = 15;
  console.log (`Ini penjumlahan dari ${a} dan ${b} adalah ${a+b}`)
 
- //internationalization
-// intl the namespace of object for ECMAscript
